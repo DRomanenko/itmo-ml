@@ -26,11 +26,11 @@
     * quartic: ![K(u)=\frac{15}{16}(1 - u^2)^2](https://latex.codecogs.com/svg.latex?K(u)=\frac{15}{16}(1%20-%20u^2)^2)
 * тип окна (окно, зависящее от количества соседей или фиксированное)
 * параметры окна:
-    * *количество ближайших соседей* от ![1](https://latex.codecogs.com/svg.latex?1) до ![\sqrt{|D|}](https://latex.codecogs.com/svg.latex?\sqrt{|D|}), ![|D|](https://latex.codecogs.com/svg.latex?|D|) --- размер набора данных, ![\sqrt{|D|}](https://latex.codecogs.com/svg.latex?\sqrt{|D|}) является эвристикой на число ближайших соседей для метрических алгоритмов.
+    * *количество ближайших соседей* от ![1](https://latex.codecogs.com/svg.latex?1) до ![\sqrt{|D|}](https://latex.codecogs.com/svg.latex?\sqrt{|D|}), ![|D|](https://latex.codecogs.com/svg.latex?|D|) - размер набора данных, ![\sqrt{|D|}](https://latex.codecogs.com/svg.latex?\sqrt{|D|}) является эвристикой на число ближайших соседей для метрических алгоритмов.
     
     **ИЛИ**
     
-    * *размер окна*, его необходимо выбирать исходя из “размеров” набора данных; хорошей практикой является настройка ширины окна на отрезке ![\left[\frac{R(D)}{\sqrt{|D|}};R(D)\right]](https://latex.codecogs.com/svg.latex?\left[\frac{R(D)}{\sqrt{|D|}};R(D)\right]) до  с шагом ![\frac{R(D)}{\sqrt{|D|}}](https://latex.codecogs.com/svg.latex?\frac{R(D)}{\sqrt{|D|}}), где ![R(D](https://latex.codecogs.com/svg.latex?R(D)) --- самое большое расстояние  между элементами в наборе данных.
+    * *размер окна*, его необходимо выбирать исходя из “размеров” набора данных; хорошей практикой является настройка ширины окна на отрезке ![\left[\frac{R(D)}{\sqrt{|D|}};R(D)\right]](https://latex.codecogs.com/svg.latex?\left[\frac{R(D)}{\sqrt{|D|}};R(D)\right]) до  с шагом ![\frac{R(D)}{\sqrt{|D|}}](https://latex.codecogs.com/svg.latex?\frac{R(D)}{\sqrt{|D|}}), где ![R(D](https://latex.codecogs.com/svg.latex?R(D)) - самое большое расстояние  между элементами в наборе данных.
 
 Таким образом требуется перебрать ![24\sqrt{|D|}](https://latex.codecogs.com/svg.latex?24\sqrt{|D|}) комбинаций гиперпараметров и *найти лучшую*.
 
@@ -40,4 +40,4 @@
 
 Для лучшей найденной комбинации гиперпараметров постройте графики зависимости F-меры от числа *ближайших соседей* **ИЛИ** *ширины окна* (при фиксированных лучших значениях прочих гиперпараметров). 
 ### Схема работы:
-![](/resources/scheme.png)
+![](/knn/resources/scheme.png)
