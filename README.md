@@ -1,1 +1,2 @@
-# itmo-ml
+# Labs:
+1. [KNN](/knn/)
